@@ -4,5 +4,8 @@
 
 import { application } from "./application"
 
+import Chat__FormController from "./chat/form_controller"
+application.register("chat--form", Chat__FormController)
+
 import HelloController from "./hello_controller"
 application.register("hello", HelloController)

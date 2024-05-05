@@ -9,6 +9,11 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
 
 
-  resources :chats, only: %i[index show]
+  resources :chats, only: %i[index show] do
+    resources :messages, only: %i[create]
+  end
+
+  get "/events/sse" => "events#sse"
+
   root "chats#index"
 end
