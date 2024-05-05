@@ -5,4 +5,6 @@ class User < ApplicationRecord
   validates :name, presence: true
 
   normalizes :email, with: -> { _1.strip.downcase }
+
+  has_many :chats, dependent: :destroy
 end
