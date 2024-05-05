@@ -1,0 +1,27 @@
+<script>
+  function throttle(func, limit) {
+    let inThrottle;
+    return function() {
+        let context = this;
+        let args = arguments;
+        if (!inThrottle) {
+            func.apply(context, args);
+            inThrottle = true;
+            setTimeout(() => inThrottle = false, limit);
+        }
+    }
+  }
+
+
+  function scrollToBottom() {
+    let element = document.querySelector("#chat-messages-container");
+    element.scrollTo({ top: element.scrollHeight, behavior: "smooth" });
+  }
+
+  const debouncedScrollToBottom = throttle(scrollToBottom, 300);
+
+  document.addEventListener(
+    "turbo:before-stream-render",
+    debouncedScrollToBottom
+  );
+</script>

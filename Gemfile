@@ -11,7 +11,8 @@ gem "pg", "~> 1.1"
 # Bundle and transpile JavaScript [https://github.com/rails/jsbundling-rails]
 gem "jsbundling-rails"
 # Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
-gem "turbo-rails"
+# gem "turbo-rails"
+gem "turbo-rails", git: "https://github.com/hotwired/turbo-rails.git", branch: "main"
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
 gem "stimulus-rails"
 # Bundle and process CSS [https://github.com/rails/cssbundling-rails]
@@ -61,3 +62,4 @@ end
 gem "bcrypt", "~> 3.1"
 
 gem "falcon", "~> 0.47.1"
+gem "ruby-openai", require: "openai"

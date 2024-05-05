@@ -8,7 +8,7 @@
   <% else %>
     <div class="flex items-start">
       <div class="bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded-lg p-4 max-w-[80%]">
-        <p><%= message.content %></p>
+        <p><%= simple_format(message.content) %></p>
       </div>
     </div>
   <% end %>
