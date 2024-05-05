@@ -23,5 +23,7 @@ module Chatterbox
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+    config.active_record.permanent_connection_checkout = :disallowed
+    config.active_support.isolation_level = :fiber
   end
 end
