@@ -23,6 +23,7 @@
   <% end %>
 </div>
 
-<turbo-stream-source src="/events/sse"></turbo-stream-source>
+<%# <turbo-stream-source src="/events/sse"></turbo-stream-source> %>
+<turbo-stream-source src="ws://localhost:3000/events/websocket"></turbo-stream-source>
 
 <%= render "scroll" %>

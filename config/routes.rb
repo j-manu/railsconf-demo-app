@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   end
 
   get "/events/sse" => "events#sse"
+  match "/events/websocket" => "events#websocket", via: %i[get connect]
 
   root "chats#index"
 end
