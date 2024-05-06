@@ -1,0 +1,7 @@
+<div class="flex justify-center py-8">
+  <ul class="list-disc list-inside space-y-4">
+    <% @products.each do |product| %>
+      <li class="text-lg font-semibold"><%= link_to product.name, product %></li>
+    <% end %>
+  </ul>
+</div>

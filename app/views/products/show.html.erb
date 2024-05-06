@@ -1,0 +1,9 @@
+<div class="flex flex-col items-center">
+  <h2 class="text-2xl font-bold mb-4"><%= @product.name %></h2>
+
+  <div class="grid grid-cols-3 gap-4">
+    <% @product.images.each do |image| %>
+      <%= image_tag(rails_storage_proxy_path(image), class: "object-cover h-48 w-48") %>
+    <% end %>
+  </div>
+</div>
