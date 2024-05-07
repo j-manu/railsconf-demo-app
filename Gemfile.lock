@@ -10,7 +10,7 @@ GIT
 
 GIT
   remote: https://github.com/rails/rails.git
-  revision: 2b146032731e90c84acc0a482b5497f710a5decd
+  revision: d7980c6b109111a37dd64a9407ffab71aae86f9a
   branch: main
   specs:
     actioncable (7.2.0.alpha)
@@ -139,7 +139,7 @@ GEM
       protocol-websocket (~> 0.11)
     base64 (0.2.0)
     bcrypt (3.1.20)
-    bigdecimal (3.1.7)
+    bigdecimal (3.1.8)
     bindex (0.8.1)
     bootsnap (1.18.3)
       msgpack (~> 1.2)
@@ -195,13 +195,13 @@ GEM
     fiber-storage (0.1.0)
     globalid (1.2.1)
       activesupport (>= 6.1)
-    i18n (1.14.4)
+    i18n (1.14.5)
       concurrent-ruby (~> 1.0)
     io-console (0.7.2)
     io-endpoint (0.10.2)
     io-event (1.5.1)
     io-stream (0.4.0)
-    irb (1.13.0)
+    irb (1.13.1)
       rdoc (>= 4.0.0)
       reline (>= 0.4.2)
     jbuilder (2.12.0)
@@ -238,7 +238,7 @@ GEM
       timeout
     net-smtp (0.5.0)
       net-protocol
-    nio4r (2.7.1)
+    nio4r (2.7.2)
     nokogiri (1.16.4-aarch64-linux)
       racc (~> 1.4)
     nokogiri (1.16.4-arm64-darwin)
