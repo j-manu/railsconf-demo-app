@@ -171,7 +171,7 @@ GEM
     drb (2.2.1)
     erubi (1.12.0)
     event_stream_parser (1.0.0)
-    falcon (0.47.1)
+    falcon (0.47.4)
       async
       async-container (~> 0.18)
       async-http (~> 0.66, >= 0.66.2)
@@ -386,7 +386,7 @@ DEPENDENCIES
   capybara
   cssbundling-rails
   debug
-  falcon (~> 0.47.1)
+  falcon (~> 0.47.4)
   jbuilder
   jsbundling-rails
   pg (~> 1.1)
