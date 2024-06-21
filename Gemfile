@@ -62,7 +62,7 @@ end
 gem "bcrypt", "~> 3.1"
 
 gem "falcon", "~> 0.47.1"
-gem "async-websocket", "~> 0.26.1"
+gem "async-websocket", "~> 0.26.2"
 
 gem "ruby-openai", require: "openai"
 
