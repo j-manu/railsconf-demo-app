@@ -250,7 +250,7 @@ GEM
     parser (3.3.1.0)
       ast (~> 2.4.1)
       racc
-    pg (1.5.6)
+    pg (1.5.7)
     process-metrics (0.2.1)
       console (~> 1.8)
       samovar (~> 2.1)
@@ -389,7 +389,7 @@ DEPENDENCIES
   falcon (~> 0.47.1)
   jbuilder
   jsbundling-rails
-  pg (~> 1.1)
+  pg (~> 1.5)
   propshaft
   puma
   rails!
